@@ -1,3 +1,88 @@
-<html>
-  <p1>hi i am kaviya thirumoorthy</p1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="C:\Users\KAVIYA\OneDrive\Desktop\github\html-practice\first_css.css">
+</head>
+<body>
+    <header>
+        <div class="header-bg">
+            
+        </div>
+        <div class="portfolio-picture">
+            <img src="C:\Users\KAVIYA\OneDrive\Pictures\Saved Pictures\kaviya T portfolio image.jpg"alt="My Portfolio Photo">
+        </div>
+
+        <div class="header-content">
+            <h1>Kaviya T</h1>
+            <p id="demo">C Programmer||Web developer|| self motivated passionated professional</p>
+            <button type="button" onclick="toggleText()">About!</button>
+            <a href="http://aspirecode84.blogspot.com/">
+                <button type="button">Visit Blog</button>
+            </a>
+            <a href="https://www.linkedin.com/in/kaviya-thirumoorthi-7a213a225">
+                <button type="button">linkedin</button>
+            </a>
+            <a href="https://github.com/kaviyathirumoorthy">
+                <button type="button">GitHub</button>
+            </a>
+            
+        </div>
+    </header>
+     <div id="portfolio" class="section hidden">
+        <!-- Add your portfolio content here -->
+        <section id="academics">
+         <!--<li>COLLEGE</li>
+         <ul>
+            <li>College name: V.S.B Engineering College,Karur</li>
+            <li>Batch: 2020-2024</li>
+            <li>Program: B.E </li>
+            <li>Department: Electronics and Communication Engineering</li>
+         </ul>
+         <li>Senior Secondary</li>
+         <ul>
+            <li>School name: Sri Aanoor Vidyalaya Matric Hr Sec School,Muthur</li>
+            <li>Batch: 2019-2020</li>
+            <li>Course: Bio-Maths</li>
+         </ul>
+         <li>Higher Secondary</li>
+         <ul>
+            <li>School name: Aanoor Vidyalaya Matric Hr Sec School,Muthur</li>
+            <li>Batch:2017-2018</li>
+         </ul>
+         <li>Bio-Maths to Engineering</li>
+         <ul>
+            <p>I started my college education during COVID-19 and
+                 I'm now in my last year of studying engineering with a focus on electronics. 
+                The pandemic made me realize how important technology is for communication,which inspired me to explore this area more.</p>
+         </ul>-->
+         
+        </section>
+
+    
+
+    </div>
+
+    <!-- Add more sections here -->
+
+    <footer>
+        <p>&copy; 2023 Kaviya T. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var originalText = document.getElementById("demo").innerHTML;
+
+        function toggleText() {
+            var demo = document.getElementById("demo");
+            if (demo.innerHTML === originalText) {
+                demo.innerHTML = "Hey amigos!,this is Kaviya Thirumoorthi and this is my portfolio connected with Blogger where you can find education-related blogs.";
+            } else {
+                demo.innerHTML = originalText;
+            }
+        }
+    </script>
+</body>
 </html>
+
