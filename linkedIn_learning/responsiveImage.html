@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>responsive images</title>
+<body>
+  <img src="C:\Users\KAVIYA\OneDrive\Pictures\profile.jpg"
+  srcset="C:\Users\KAVIYA\OneDrive\Pictures\profile.jpg 500w,
+  C:\Users\KAVIYA\OneDrive\Pictures\profile.jpg 800w,
+  C:\Users\KAVIYA\OneDrive\Pictures\profile.jpg 1200w"
+  sizes="(max-width: 600px) 500px,
+         (max-width: 1000px) 800px,
+         1200px"
+  alt="Responsive Image">
+   
+  <p>Viewport Width: <span id="viewportWidth"></span> pixels</p>
+
+  <script>
+    // Get the viewport width using JavaScript
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    // Display the viewport width on the webpage
+    document.getElementById('viewportWidth').textContent = viewportWidth;
+  </script>
+  
+</body>
+</head>
